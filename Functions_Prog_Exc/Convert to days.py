@@ -8,7 +8,7 @@ def convert_to_days() :
 
 def get_days(hours, minutes, seconds):
     days = (hours / 24) + (minutes / 1440) + (seconds / 86400)
-    print(f"{days:.4f}")
+    print(round(days,4))
 
 def main():
     hours, minutes, seconds = convert_to_days()
